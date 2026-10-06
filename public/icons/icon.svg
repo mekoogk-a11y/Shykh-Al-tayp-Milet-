@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051c14" />
+      <stop offset="50%" stop-color="#08281c" />
+      <stop offset="100%" stop-color="#0b3827" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd875" />
+      <stop offset="50%" stop-color="#dfb64e" />
+      <stop offset="100%" stop-color="#c49a37" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="100" fill="url(#bg)" />
+  
+  <!-- Outer Gold Border -->
+  <rect x="24" y="24" width="464" height="464" rx="84" fill="none" stroke="url(#gold)" stroke-width="4" opacity="0.6" />
+  
+  <!-- Islamic Geometric 8-pointed star rosette -->
+  <g transform="translate(256, 256) scale(1.15)">
+    <!-- Square 1 -->
+    <rect x="-110" y="-110" width="220" height="220" rx="16" fill="none" stroke="url(#gold)" stroke-width="6" />
+    <!-- Square 2 rotated 45 deg -->
+    <rect x="-110" y="-110" width="220" height="220" rx="16" fill="none" stroke="url(#gold)" stroke-width="6" transform="rotate(45)" />
+    
+    <!-- Inner Minaret / Open Book Motif -->
+    <path d="M-55,50 C-20,35 -10,35 0,42 C10,35 20,35 55,50 L55,-35 C20,-48 10,-48 0,-40 C-10,-48 -20,-48 -55,-35 Z" fill="url(#gold)" opacity="0.9" />
+    <line x1="0" y1="-40" x2="0" y2="42" stroke="#08281c" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Top Crescent -->
+    <path d="M-18,-68 A18,18 0 1,0 18,-68 A14,14 0 1,1 -14,-78 Z" fill="url(#gold)" />
+  </g>
+  
+  <!-- Arabic Calligraphy Text below star -->
+  <text x="256" y="440" font-family="'Amiri', 'Traditional Arabic', serif" font-size="34" font-weight="bold" fill="url(#gold)" text-anchor="middle" letter-spacing="1">
+    الشيخ عكود
+  </text>
+</svg>
